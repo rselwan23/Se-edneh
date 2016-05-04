@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/background">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        android:id="@+id/loginPage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTest_username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:hint="Username"
+        android:textColor="#000000"
+        android:layout_below="@+id/loginPage"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTest_password"
+        android:layout_marginLeft="20dp"
+        android:hint="Password"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:keepScreenOn="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login"
+        android:background="#38971e"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/editTest_password"
+        android:layout_alignLeft="@+id/loginPage"
+        android:layout_alignStart="@+id/loginPage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are not a member?Register Now"
+        android:id="@+id/textView"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_marginTop="78dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/signup"
+        android:textColor="#000000"
+        android:background="#c8d46a"
+        android:allowUndo="false"
+        android:onClick="onClickSetRegister"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignStart="@+id/login" />
+</RelativeLayout>

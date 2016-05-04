@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Caretacker"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:id="@+id/text_wlc"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Username"
+        android:id="@+id/Text_username"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="68dp"
+        android:layout_below="@+id/text_wlc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Text_pass"
+        android:layout_below="@+id/Text_username"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:id="@+id/Text_pass1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/Text_pass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Elderly ID"
+        android:id="@+id/Text_elderlyId"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/Text_pass1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:autoText="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Related To Elderly"
+        android:id="@+id/textView4"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginTop="33dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/Text_elderlyId"
+        android:layout_alignLeft="@+id/Text_elderlyId"
+        android:layout_alignStart="@+id/Text_elderlyId" />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/buttonnext"
+        android:textColor="#000000"
+        android:background="#c8d46a"
+        android:onClick="onClickSetNext"
+        android:layout_below="@+id/spinner1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp" />
+
+
+</RelativeLayout>

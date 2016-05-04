@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addphoto"
+        android:src="@drawable/addphoto"
+        android:onClick="onClickSetPicture"
+        android:layout_marginTop="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Name"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:id="@+id/Text_name"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/addphoto"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Gender"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Text_gender"
+        android:layout_below="@+id/Text_name"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="Phone 1"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:id="@+id/Text_phone1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/Text_gender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="Phone 2(optional)"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:id="@+id/Text_phone2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/Text_phone1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Address"
+        android:id="@+id/Text_address"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/Text_phone2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/buttonConfirm"
+        android:textColor="#000000"
+        android:background="#c8d46a"
+        android:layout_below="@+id/Text_address"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp" />
+
+
+</RelativeLayout>
